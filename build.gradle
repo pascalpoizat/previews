@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'eclipse'
 }
 
 repositories {
@@ -27,5 +28,11 @@ tasks.withType(JavaExec) {
 }
 
 test {
+    jvmArgs '--enable-preview'
     useTestNG()
+}
+
+eclipse.jdt.file.withProperties { props ->
+    props['org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures']= 'enabled'
+    props['org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures']= 'ignore'
 }
