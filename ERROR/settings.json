@@ -1,0 +1,159 @@
+{
+    "editor.fontFamily": "Fira Code iScript",
+    "terminal.integrated.fontFamily": "Fira Code iScript",
+    "editor.fontLigatures": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 0,
+    "editor.minimap.renderCharacters": false,
+    "editor.tabSize": 4,
+    "editor.renderIndentGuides": true,
+    "editor.minimap.enabled": true,
+    "todohighlight.include": [
+        "**/*.java",
+        "**/*.hs"
+    ],
+    "todohighlight.exclude": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**",
+        "**/.stack-work/**"
+    ],
+    "stylishHaskell.runOnSave": false,
+    //"haskell.hlint.run": "onSave",
+    //"python.pythonPath": "python3",
+    //"java.errors.incompleteClasspath.severity": "ignore",
+    //"cSpell.language": "en",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.keymap": "chorded",
+    "editor.acceptSuggestionOnEnter": "off",
+    //"markdown.extension.toc.githubCompatibility": true,
+    //"markdown.extension.showExplorer": true,
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "languageServerHaskell.hieExecutablePath": "${HOME}/.local/bin/hie",
+    "[haskell]": {
+        "editor.defaultFormatter": "alanz.vscode-hie-server"
+    },
+    "languageServerHaskell.useCustomHieWrapperPath": "${HOME}/.local/bin/hie-wrapper",
+    "languageServerHaskell.useCustomHieWrapper": true,
+    "stylishHaskell.commandLine": "/Users/pascalpoizat/.local/bin/stylish-haskell",
+    //"pddlParser.executableOrService": "java -javaagent:/Users/pascalpoizat/Downloads/pddl4j-3.8.3.jar -server -Xms2048m -Xmx2048m fr.uga.pddl4j.parser.Parser",
+    //"pddlPlanner.executableOrService": "java -javaagent:/Users/pascalpoizat/Downloads/pddl4j-3.8.3.jar -server -Xms2048m -Xmx2048m fr.uga.pddl4j.planners.statespace.StateSpacePlannerFactory",
+    //"pddlParser.executableOptions": "$(parser) -o $(domain) -f $(problem)",
+    //"pddlPlanner.executableOptions": "$(planner) $(options) -o $(domain) -f $(problem)",
+    "java.import.gradle.home": "",
+    "editor.wordWrap": "on",
+    "git-graph.fetchAvatars": true,
+    "languageServerHaskell.showTypeForSelection.onHover": false,
+    "editor.hover.delay": 600,
+    "tlaplus.tlc.statisticsSharing": "shareWithoutId",
+    "cSpell.userWords": [
+        "Monad",
+        "Functor",
+        "Monoid",
+        "Semigroup",
+        "pascalpoizat"
+    ],
+    "workbench.colorTheme": "Nord",
+    "java.home": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home",
+    // "java.configuration.runtimes": [
+
+    //     {
+    //         "name": "JavaSE-1.8",
+    //         "path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home"
+    //     },
+    //     {
+    //         "name": "JavaSE-12",
+    //         "path": "/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home"
+    //     },
+    //     {
+    //         "name": "JavaSE-14",
+    //         "path": "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home"
+    //     }
+    // ],
+    "java.refactor.renameFromFileExplorer": "autoApply",
+    "editor.columnSelection": false,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true, // enable semantic highlighting for all themes
+        "rules": {
+            // types are BOLD
+            // statics are ITALIC
+            // non final variables are UNDERLINED
+            "type": {
+                "bold": true,
+            },
+            "*.static": {
+                "italic": true,
+            },
+            "variable": {
+                "underline": true,
+            //    "foreground": "#ff0000C3"
+            },
+            "*.readonly": {
+                "italic" : false,
+                "underline": false,
+                //"foreground": "#000000C3"
+            },
+        }
+    },
+    //"haskell.semanticHighlighting.enabled": true,
+    "markdown.preview.fontSize": 12,
+    "editor.fontSize": 18,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "java.semanticHighlighting.enabled": true,
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.fontSize": 14,
+    "java.import.gradle.arguments": "",
+    "java.import.gradle.jvmArguments": "",
+    "java.import.gradle.user.home": "",
+    "java.import.gradle.version": "",
+    // "editor.rulers": [
+    //     80,
+    //     120
+    // ],
+    // "editor.overviewRulerBorder": false,
+    // "workbench.colorCustomizations": {
+    //     "editorRuler.foreground": "#ff4081"
+    // }
+    //"workbench.iconTheme": "Monokai Pro Icons",
+    //"[idris]": {}
+    
+}
