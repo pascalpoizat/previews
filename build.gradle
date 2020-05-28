@@ -1,8 +1,12 @@
 plugins {
     id 'java'
+    id 'java-library'
     id 'application'
     id 'eclipse'
 }
+
+sourceCompatibility = JavaVersion.VERSION_14
+targetCompatibility = JavaVersion.VERSION_14
 
 repositories {
     jcenter()
@@ -16,14 +20,32 @@ application {
     mainClassName = 'previews.App'
 }
 
-sourceCompatibility = 14
+compileJava {
+    options.compilerArgs += ["--enable-preview"]
+}
+compileTestJava {
+    options.compilerArgs += ["--enable-preview"]
+}
+
+eclipse.jdt.file.withProperties { props ->
+    props['org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures']= 'enabled'
+    props['org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures']= 'ignore'
+}
+
+test {
+    jvmArgs '--enable-preview'
+    useTestNG()
+}
+
+tasks.withType(JavaExec) {
+    jvmArgs += "--enable-preview"
+}
+
+/* OLD
 tasks.withType(JavaCompile) {
     options.compilerArgs += '--enable-preview'
 }
 tasks.withType(Test) {
-    jvmArgs += "--enable-preview"
-}
-tasks.withType(JavaExec) {
     jvmArgs += "--enable-preview"
 }
 
@@ -32,7 +54,4 @@ test {
     useTestNG()
 }
 
-eclipse.jdt.file.withProperties { props ->
-    props['org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures']= 'enabled'
-    props['org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures']= 'ignore'
-}
+*/
