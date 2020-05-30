@@ -12,5 +12,7 @@ public class App {
         System.out.println(new App().getGreeting());
         Person bob = new Person(1, "Sponge Bob");
         System.out.println(bob);
+        Course prof = new Course("PROF", 3);
+        System.out.println(prof);
     }
 }
